@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <link rel="stylesheet" href="click.css">
+</head>
+<body>
+    <section>
+        <div id="shape">
+          <div id="rectangle"></div>
+        </div>
+        <div id="count">
+            Count=<span id="number" >0</span>
+        </div>
+        <div id="button">
+            <button id="click" onclick="shape()" onchange="incre()">Click</button>
+            <button id="reset" onclick="set()">Reset</button>
+            <button id="red" onclick="changered()">Red</button>
+            <button id="blue" onclick="changeblue()">Blue</button>
+        </div>
+    </section>
+
+    <script>
+        var rec=document.getElementById("rectangle");
+        var tap=document.getElementById("click");
+        var zero=document.getElementById("reset");
+        var cor=document.getElementsById("red");
+        var cob=document.getElementById("blue");
+        var w1=100;
+
+        function changered(){
+              rec.style.backgroundColor="red"
+        }
+
+        function changeblue(){
+              rec.style.backgroundColor="blue"
+        }
+
+        function set() {
+         number = 0;
+         document.getElementById("number").innerHTML = number;
+       }
+         
+       
+        function shape(){
+            let number = 0;
+        number++;
+        document.getElementById("number").innerHTML = number;
+
+            // if(count%2==0){
+            //     w1=w1-50
+            //     rec.style.width=w1+"px"
+            // }
+            // else if()
+            // {
+            //     rec.style.height="50px"
+            //     rec.style.width="50px"
+            //     rec.style
+            // }
+        }
+
+
+    </script>
+</body>
+</html>
